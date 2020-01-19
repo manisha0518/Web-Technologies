@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Tables</title>
+		<style>
+			table{
+				border: 3px solid yellow;
+				border-spacing: 10px;
+				background-color: pink;
+			}
+			td, th{
+				border: 1px solid yellow;
+			}
+			td.center{
+				text-align:center;
+			}
+			p.heading{
+				text-align: center;
+				font-size: 300%;
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		Manisha 1602-17-737-082
+		<p class="heading">Student Marks</p>
+		<table border cellpadding="20" width=600>
+			<tr>
+				<th>Subject Name</th>
+				<th>Student Name</th>
+				<th>Roll No</th>
+				<th>Marks</th>
+			</tr>
+			<tr>
+				<td class="center" rowspan="2">WT</td>
+				<td>Ramesh</td>
+				<td>7001</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>John</td>
+				<td>7002</td>
+				<td>75</td>
+			</tr>
+			<tr>
+				<td>Sum</td>
+				<td colspan="3">Total marks</td>
+			</tr>
+		</table>
+	</body>
+</html>
