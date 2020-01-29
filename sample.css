@@ -1,0 +1,21 @@
+h1{
+text-align: center;
+}
+table{
+border: 2px yellow;
+border-style:ridge;
+background-color: pink;
+text-align: left;
+padding: 10px;
+border-spacing: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+td#ah{
+text-align: center;
+}
+td,th{
+border: 1px yellow;
+border-style: ridge;
+padding: 10px;
+}
