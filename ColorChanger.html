@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Color Changer</title>
+		<style>
+			pre {
+				padding-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		Manisha 1602-17-737-082
+		<script>
+			var cols = {
+				"Light_Blue": "lightblue",
+				"Light_Yellow": "lightyellow",
+				"Light_Green": "lightgreen"
+			}
+			var cols1 = {
+				"Light_Blue": " Light_Blue",
+				"Light_Yellow": " Light_Yellow",
+				"Light_Green": " Light_Green"
+			}
+			window.onload = function() {
+				var a = document.getElementsByName("bgcRbtns");
+				for (var i = 0; i < a.length; i++) {
+					a[i].onclick = function() {
+						document.body.style.backgroundColor = cols[this.value];
+						//var x = document.getElementsByName("bgcRbtns").innerHTML;
+						document.getElementById("colorText").innerHTML = cols1[this.value];
+						document.getElementById("radioCount").innerHTML = a.length;
+					}
+				}
+			}
+		</script>
+		<form>
+			<p>Choose one colour :</p>
+			<pre>
+<input type="radio" name="bgcRbtns" class="radioColor"
+		value="Light_Blue">Light Blue
+<input type="radio" name="bgcRbtns" checked class="radioColor"
+		value="Light_Yellow">Light Yellow 
+<input type="radio" name="bgcRbtns" class="radioColor"
+		value="Light_Green">Light Green
+			</pre>
+
+			You have chosen <span id="colorText"></span>
+			<br>
+			Count of radio buttons is : <span id="radioCount"></span>
+		</form>
+
+	</body>
+</html>
